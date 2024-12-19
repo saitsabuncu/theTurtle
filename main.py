@@ -9,6 +9,8 @@ def game_over_callback():
     """Oyun bittiğinde çağrılır."""
     global game_over
     game_over = True
+    # Turtle ekranını kapat
+    turtle.bye() # Bu, ekranın kapanmasını sağlar ve `Terminator` hatasını önler.
 
 def start_game():
     """Oyunu başlatır."""

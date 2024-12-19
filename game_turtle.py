@@ -33,7 +33,8 @@ def hide_turtles():
 
 def show_turtles_randomly(game_over, screen):
     """Kaplumbağaları rastgele bir şekilde gösterir."""
-    if not game_over:
-        hide_turtles()
-        random.choice(turtle_list).showturtle()
-        screen.ontimer(lambda: show_turtles_randomly(game_over, screen), 500)
+    if game_over:
+        return
+    hide_turtles()
+    random.choice(turtle_list).showturtle()
+    screen.ontimer(lambda: show_turtles_randomly(game_over, screen), 500)
