@@ -1,4 +1,5 @@
-import turtle, random
+import turtle
+import random
 from settings import GRID_SIZE, X_COORDINATES, Y_COORDINATES
 from game_score import increase_score
 
@@ -31,10 +32,10 @@ def hide_turtles():
     for t in turtle_list:
         t.hideturtle()
 
-def show_turtles_randomly(game_over, screen):
+def show_turtles_randomly(game_over, screen, interval=500):
     """Kaplumbağaları rastgele bir şekilde gösterir."""
     if game_over:
         return
     hide_turtles()
     random.choice(turtle_list).showturtle()
-    screen.ontimer(lambda: show_turtles_randomly(game_over, screen), 500)
+    screen.ontimer(lambda: show_turtles_randomly(game_over, screen, interval), interval)
