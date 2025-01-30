@@ -128,3 +128,4 @@ def start_game_up():
 # Oyunu başlat
 start_game_up()
 turtle.mainloop()
+
