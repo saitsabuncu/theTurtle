@@ -47,7 +47,7 @@ Katkılarınızı memnuniyetle karşılıyoruz! Projeye katkıda bulunmak için 
 1. **Depoyu Fork'layın**
 2. **Yeni Bir Branch Oluşturun:** `git checkout -b yeni-özellik`
 3. **Değişikliklerinizi Commit Edin:** `git commit -m 'Yeni özellik eklendi'`
-4. **Branch'inizi Push Edin:** `git push origin saitsabuncu-to-main`
+4. **Branch'inizi Push Edin:** `git push origin yeni-özellik`
 5. **Pull Request Oluşturun**
 
 ## Lisans
